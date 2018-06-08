@@ -1,0 +1,35 @@
+    body{
+        color: white;
+        text-align: center;
+        }
+        #content{
+        max-width: 960px;
+        margin: 0 auto;
+        }
+        #content div{
+        background: lightskyblue;
+        padding: 10px;
+        }
+        #content div:nth-child(even){
+        background: grey;
+        }
+
+        #content{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 100px 300px 100px;
+grid-auto-rows: 150px;
+grid-gap: 10px;
+max-width: 960px;
+margin: 0 auto;
+grid-template-areas:
+".area1 area1 "
+"area2 area2 area2"
+"area3 area3 area3";
+}
+.kotak1{
+grid-area: area1;}
+.kotak2{
+grid-area: area2;}
+.kotak3{
+grid-area: area3;}
